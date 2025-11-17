@@ -24,7 +24,7 @@ This project helps beginners clearly understand how **Math.random()** and **Math
 
 Example:
 
-```js
+
 console.log(Math.random()); 
 // ➝ 0.1354387483
 // ➝ 0.8574381291
@@ -36,8 +36,7 @@ Math.floor() converts a decimal number into the nearest smaller whole number.
 
 Example:
 
-js
-Copy code
+
 Math.floor(4.9);  // ➝ 4
 Math.floor(9.1);  // ➝ 9
 When combined with Math.random(), we can generate valid random positions inside a string.
@@ -45,13 +44,10 @@ When combined with Math.random(), we can generate valid random positions inside 
 🎯 Generating a Random Character
 If you have a string like this:
 
-js
-Copy code
+
 let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 To pick a random character:
 
-js
-Copy code
 let randomIndex = Math.floor(Math.random() * chars.length);
 let randomChar = chars[randomIndex];
 Breakdown:
@@ -62,8 +58,7 @@ Math.random() → gives a random decimal
 Math.floor() → converts it to a usable index (0–chars.length-1)
 
 🔧 Project Code Example
-js
-Copy code
+
 function generatePassword() {
     let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
     let password = "";
@@ -91,12 +86,12 @@ These two functions allow you to:
 Understanding this combo builds the foundation for many JavaScript logic problems.
 
 📁 Project Structure
-pgsql
-Copy code
+
+
 📦 passwordGenerator
- ┣ 📜 index.html
+ ┣ 📜 password.html
  ┣ 📜 password.css
- ┣ 📜 script.js
+ ┣ 📜 passsword.js
  ┗ 📜 README.md
 👨‍💻 Author
 Created by Piyush Bhardwaj
